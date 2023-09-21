@@ -161,22 +161,23 @@ input {
 /*part of message block*/
 .section__chatBox {
     width: 70%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .incoming__msg {
     text-align: left;
     float: right;
+    background: burlywood;
 }
 
 .outing__msg {
     text-align: right;
     float: left;
+    background: #445bc1;
 }
 
 .incoming__msg, .outing__msg {
     width: 50%;
-    background: #445bc1;
     overflow-wrap: break-word;
     padding: 30px;
     color: white;
@@ -184,7 +185,16 @@ input {
     word-wrap: break-word;
     margin: 5px;
 }
-
+.meta{
+    font-size: 18px;
+    margin: 5px;
+}
+.meta span{
+    margin: 5px;
+}
+.text__msg{
+    text-align: justify;
+}
 /*footer part */
 .footer__chat {
     width: 100%;
